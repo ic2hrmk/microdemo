@@ -1,0 +1,11 @@
+.idea
+.circleci
+
+microdemo-web/microdemo-web
+
+*.gitignore
+*.dockerignore
+*Dockerfile
+
+*.http
+*.md
