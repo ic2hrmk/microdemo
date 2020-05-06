@@ -1,11 +1,11 @@
-# MicroDemo
+# MicroDemo ![CircleCI](https://img.shields.io/circleci/build/github/ic2hrmk/microdemo?label=CircleCI:%20Image%20build)
 
 Super-simple micro services based on [go-micro](https://github.com/micro/micro) 
 framework which could be used for scratches and development purposes.
 
 ## Usage
 
-### MicroDemo Web [FQDN: dev.ic2hrmk.api.microdemo]
+### MicroDemo Web
 
 Pseudo RestAPI microservice which responds to any http requests.
 
