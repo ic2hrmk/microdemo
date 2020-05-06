@@ -2,7 +2,7 @@
   <configuration default="false" name="MicroDemo Web" type="GoApplicationRunConfiguration" factoryName="Go Application" folderName="Services">
     <module name="microdemo" />
     <working_directory value="$PROJECT_DIR$" />
-    <parameters value="--server_address=:8080 --handler=/api/v1/whoami --version" />
+    <parameters value="--server_address=:8080" />
     <EXTENSION ID="net.ashald.envfile">
       <option name="IS_ENABLED" value="false" />
       <option name="IS_SUBST" value="false" />

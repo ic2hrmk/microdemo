@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/micro/go-micro/util/log"
-	"github.com/micro/go-micro/web"
+	"github.com/micro/go-micro/v2/logger"
+	"github.com/micro/go-micro/v2/web"
 )
 
 type (
@@ -28,7 +28,7 @@ type (
 func MicrodemoCall(service web.Service) func(http.ResponseWriter, *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
 
-		log.Infof("got a new HTTP request to service [%s]",
+		logger.Infof("got a new HTTP request to service [%s]",
 			service.Options().Name)
 
 		response := DemoCallResponse{
