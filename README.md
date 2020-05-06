@@ -1,31 +1,29 @@
 # MicroDemo
 
-Super-simple micro service based on [go-micro](https://github.com/micro/micro) framework which could be used 
-for scratches and development purposes.
+Super-simple micro services based on [go-micro](https://github.com/micro/micro) 
+framework which could be used for scratches and development purposes.
 
 ## Usage
 
 ### MicroDemo Web [FQDN: dev.ic2hrmk.api.microdemo]
 
-#### Build
-
-`make build`
-
-#### Tune
-Run flags:
-~~~bash
---handler value   Path to receive HTTP requests (default: "/api/call") [$MICRODEMO_WEB_HANDLER]
---version         Shows a version of application and exists
-~~~
+Pseudo RestAPI microservice which responds to any http requests.
 
 #### Docker Image
 
-TODO:
-* [ ] Add a link to image at DockerHub
-* [ ] Add description and usage example
-  
+There is a [DockerHub link](https://hub.docker.com/repository/docker/ic2h/microdemo-web).
+You can pull the image locally via command: `docker push ic2h/microdemo-web:tagname`.
 
-## Micro Tune
+Demo handler (by default) is accessible at `/api/call`.
+
+#### Tune
+
+Startup flags:
+~~~bash
+--handler value   Path to receive HTTP requests (default: "/api/call") [$MICRODEMO_WEB_HANDLER]
+~~~
+
+##Micro
 
 ~~~bash
 MICRO_CLIENT                     --client value                     Client for go-micro; rpc
